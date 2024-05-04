@@ -1,6 +1,6 @@
 # Product Inventory Management System: FastAPI + Postgres (ORM: Sqlalchemy)
 
-This project demonstrates  RESTful APIs for managing product inventory using FastAPI and SQLAlchemy, adhering to an MVC-like architecture.
+This project demonstrates  RESTful APIs for managing product inventory using FastAPI and SQLAlchemy.
 
 # Prerequisites:
     - Docker
@@ -9,7 +9,7 @@ This project demonstrates  RESTful APIs for managing product inventory using Fas
 # Setup
 
     Step 1 :- Clone the Repository:-
-        git clone http://repo_url
+        git clone https://github.com/patidar12/InventoryManagement.git
     
     Step 2 :- Install docker-deskop:-
         url: https://docs.docker.com/desktop/install/mac-install/
