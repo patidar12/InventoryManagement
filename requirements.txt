@@ -1,0 +1,7 @@
+uvicorn == 0.29.0
+fastapi == 0.110.2
+asyncio == 3.4.3
+pydantic==2.7.1
+psycopg2 == 2.9.9
+SQLAlchemy==2.0.29
+ConfigArgParse==1.7
