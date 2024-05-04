@@ -34,8 +34,8 @@ This project demonstrates  RESTful APIs for managing product inventory using Fas
             /suppliers                       POST                 Create a new Supplier
             /supplier/{supplier_id}          GET                  Get details of a supplier by supplier_id
    
-   ## For detail documentation of APi, please refer [swagger url](http://0.0.0.0:8000/docs) after runing the application: 
-
+   ## For detail documentation of APi, please refer [swagger url](http://0.0.0.0:8000/docs) after runing the application
+   ### Note: First create supplier then create product using created supplier_id.
 
 
 # Architecture:
