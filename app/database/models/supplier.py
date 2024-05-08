@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, LargeBinary
 from sqlalchemy.orm import relationship
-from app.database import Base
+from app.database import BaseModel
 
-class Supplier(Base):
+class Supplier(BaseModel):
     __tablename__ = "suppliers"
 
     id = Column(Integer, primary_key=True, index=True)

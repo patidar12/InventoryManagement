@@ -22,9 +22,10 @@ class ProductRepository:
         if not supplier:
             return None, f"Suplier with id: {supplier_id} not present."
         new_product: ProductModel = ProductModel(**product.dict())
-        self.db.add(new_product)
-        self.db.commit()
-        self.db.refresh(new_product)
+        # self.db.add(new_product)
+        # self.db.commit()
+        # self.db.refresh(new_product)
+        new_product.insert_one(self.db)
         return new_product, ""
 
     def get_product(self, product_id: int) -> ProductModel:

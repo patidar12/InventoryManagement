@@ -19,5 +19,12 @@ def get_db():
         db.close()
 
 
+class BaseModel(Base):
+    __abstract__ = True
+    def insert_one(self, db):
+        db.add(self)
+        db.commit()
+        db.refresh(self)
+
 
 

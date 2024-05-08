@@ -21,8 +21,8 @@ async def create_app():
     app.include_router(supplier_router)
     @app.on_event("startup")
     async def init_database():
-        from app.database import Base, engine
-        Base.metadata.create_all(bind=engine)  # Create tables if not exist
+        from app.database import BaseModel, engine
+        BaseModel.metadata.create_all(bind=engine)  # Create tables if not exist
 
     @app.api_route("/_healtz")
     async def health_check():
